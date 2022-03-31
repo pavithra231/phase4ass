@@ -1,0 +1,41 @@
+
+ #social {
+    margin-top: 20px;
+   text-align: center;
+   padding:0;
+   margin:0;
+ }
+ .icon {
+   margin: 10px; 
+   color: #5F6369;
+ }
+ #social li{
+    display: inline;
+   list-style-type: none;
+   }
+.footer{
+    background-color: aqua;
+    padding: 3em;
+    margin-top: auto;
+}
+
+#form{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 5% ;
+}
+
+#form-header{
+    text-align: center;
+    padding-top: 2%;
+   
+}
+
+#form-button{
+    border-radius: 12px;
+    background-color: powderblue;
+}
+
+label{
+    font-weight: bold;
+}
