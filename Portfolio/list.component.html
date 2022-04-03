@@ -1,0 +1,49 @@
+
+<div *ngFor="let t of products" align="center">
+  <img src="./assets/photo.png" style="width: 80px;">
+  <h3 >Name : {{t.name}}</h3><br>
+ <h3>Email Id : {{t.email}}</h3><br>
+ <h3 >Phone : {{t.phone}}</h3><br>
+
+</div>
+
+<table *ngFor="let p of products" align="center">
+    <tr align="center">
+      <th>College</th>
+      <th>Year of Pass</th>
+      <th>Percentage</th>
+      <th>Department</th>
+     
+    </tr>
+    <tr align="center">
+      <td>{{p.college}}</td>
+      <td>{{p.yearofpass}}</td>
+      <td>{{p.percentage}}</td>
+      <td>{{p.department}}</td>
+    </tr>
+  </table>
+  <br><br>
+
+  <table *ngFor="let s of products" align="center">
+    <tr align="center">
+      <th>School</th>
+      <th>Year of Pass</th>
+      <th>Percentage</th>
+      <th>Group</th>
+     
+    </tr>
+    
+
+    <tr align="center">
+      <td>{{s.school}}</td>
+      <td>{{s.YOP}}</td>
+      <td>{{s.percent}}</td>
+      <td>{{s.group}}</td>
+    </tr>
+  </table>
+  <div *ngFor="let t of products" align="center">
+    <h3 >skill : {{t.skill}}</h3><br>
+    <h3>certificate : {{t.certificate}}</h3><br>
+
+
+  </div>

@@ -1,0 +1,147 @@
+<div class="jumbotron" align="center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Register Form</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Name : </label>
+                        <input type="text" [(ngModel)]="product.name" formControlName="name" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['college'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                            <div *ngIf="f['name'].errors['required']">
+                                The value for name is Required
+                            </div>
+                        </div>
+
+                        <label>Email Id: </label>
+                        <input type="text" [(ngModel)]="product.email" formControlName="email" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['college'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                            <div *ngIf="f['email'].errors['required']">
+                                The value for email is Required
+                            </div>
+                        </div>
+
+                        <label>Phone :
+                        </label>
+                        <input type="text" [(ngModel)]="product.phone" formControlName="phone" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['phone'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['phone'].errors" class="invalid-feedback">
+                            <div *ngIf="f['phone'].errors['required']">
+                                The value for phone is Required
+                            </div>
+                        </div>
+
+                        <label>College: </label>
+                        <input type="text" [(ngModel)]="product.college" formControlName="college" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['college'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['college'].errors" class="invalid-feedback">
+                            <div *ngIf="f['college'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Year of Pass</label>
+                        <input type="text" [(ngModel)]="product.yearofpass" formControlName="yearofpass" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['yearofpass'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['yearofpass'].errors" class="invalid-feedback">
+                            <div *ngIf="f['yearofpass'].errors['required']">
+                                The value for Name is Required
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Percentage: </label>
+                        <input type="text" [(ngModel)]="product.percentage" formControlName="percentage" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['percentage'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['percentage'].errors" class="invalid-feedback">
+                            <div *ngIf="f['percentage'].errors['required']">
+                                The value for Price is Required
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Department: </label>
+                        <input type="text" [(ngModel)]="product.department" formControlName="department" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['department'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['department'].errors" class="invalid-feedback">
+                            <div *ngIf="f['department'].errors['required']">
+                                The value for Description is Required
+                            </div>
+
+                        </div>
+                    </div>
+                    <label>School: </label>
+                        <input type="text" [(ngModel)]="product.school" formControlName="school" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['school'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['school'].errors" class="invalid-feedback">
+                            <div *ngIf="f['school'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+                        <label>Year of pass: </label>
+                        <input type="text" [(ngModel)]="product.YOP" formControlName="YOP" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['college'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['YOP'].errors" class="invalid-feedback">
+                            <div *ngIf="f['YOP'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+                        <label>Percentage: </label>
+                        <input type="text" [(ngModel)]="product.percent" formControlName="percent" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['percent'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['percent'].errors" class="invalid-feedback">
+                            <div *ngIf="f['percent'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+                        <label>Group: </label>
+                        <input type="text" [(ngModel)]="product.group" formControlName="group" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['group'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['group'].errors" class="invalid-feedback">
+                            <div *ngIf="f['group'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+                        <label>Skill: </label>
+                        <input type="text" [(ngModel)]="product.skill" formControlName="skill" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['skill'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['skill'].errors" class="invalid-feedback">
+                            <div *ngIf="f['skill'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+                        <label>certificate: </label>
+                        <input type="text" [(ngModel)]="product.certificate" formControlName="certificate" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['certificate'].errors}"><br><br>
+
+                        <div *ngIf="submitted && f['certificate'].errors" class="invalid-feedback">
+                            <div *ngIf="f['certificate'].errors['required']">
+                                The value for Id is Required
+                            </div>
+                        </div>
+                    <div class="form-group"><br>
+                        <button class="btn btn-primary">Add details</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
