@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+  }
+table{
+    width: 50%;
+    background-color: azure;
+}
+tr{
+    width: 20%;
+}
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }

@@ -1,0 +1,41 @@
+<h3 align="center">Redircting to payment page..................</h3>
+<br><br>
+<div class="jumbotron" align="center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Payment</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onsubmit()">
+                    <div class="form-group">
+                        <label>CardHolder Name  :  </label>
+                        <input type="text" [(ngModel)]="owner" formControlName="owner" class="form-control" required
+                        >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Card Number  :  </label>
+                        <input type="number" [(ngModel)]="cardnum" formControlName="cardnum" class="form-control" required
+                        >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>Expiry Date : </label>
+                        <input type="number" [(ngModel)]="expdate" formControlName="expdate" class="form-control" required
+                        >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>CVV : </label>
+                        <input type="number" [(ngModel)]="cvv" formControlName="cvv" class="form-control" required
+                        >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

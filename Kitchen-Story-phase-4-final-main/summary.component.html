@@ -1,0 +1,20 @@
+<h3 align="center">Payment successful....</h3>
+<br>
+<h3 align="center">Order Details </h3>
+<br>
+<table align="center">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      
+    </tr>
+    <tr *ngFor="let x of prod" align="center">
+      <td>{{x.id}}</td>
+      <td>{{x.name}}</td>
+      <td>{{x.price}}</td>
+      <td>{{x.description}}</td>
+         
+    </tr>
+  </table>

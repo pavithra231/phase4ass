@@ -1,0 +1,21 @@
+div {
+    margin-bottom: 10px;
+  }
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+  }
+  button{
+    background-color: lightgreen;
+    font-size: 20px; /* Put your wanted size for your button here*/
+    border-width: 30%;
+    width: 100%;
+   max-width: 100px;
+   box-sizing: border-box;
+
+   font-weight: bold;
+}
+label{
+  font-weight: bold; ;
+}

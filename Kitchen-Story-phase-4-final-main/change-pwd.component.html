@@ -1,0 +1,38 @@
+<div class="jumbotron" align="center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Password Change</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Username  :  </label>
+                        <input type="text" [(ngModel)]="username" formControlName="username" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['username'].errors}">
+
+                        <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+                            <div *ngIf="f['username'].errors['required']">
+                                The value for username is Required
+                            </div>
+                        </div>    
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label>New Password : </label>
+                        <input type="text" [(ngModel)]="new_pass" formControlName="new_pass" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['new_pass'].errors}">
+
+                        <div *ngIf="submitted && f['new_pass'].errors" class="invalid-feedback">
+                            <div *ngIf="f['new_pass'].errors['required']">
+                                The value for password is Required
+                            </div>
+                        </div>    
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

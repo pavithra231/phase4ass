@@ -1,0 +1,42 @@
+<div class="jumbotron" align="center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>User Login</h2>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Username : </label>
+                        <input type="text" [(ngModel)]="uname" formControlName="uname" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['uname'].errors}">
+
+                        <div *ngIf="submitted && f['uname'].errors" class="invalid-feedback">
+                            <div *ngIf="f['uname'].errors['required']">
+                                The value for username is Required
+                            </div>
+                        </div>
+
+                    </div><br>
+                    <div class="form-group">
+                        <label>Password : </label>
+                        <input type="text" [(ngModel)]="pass" formControlName="pass" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['pass'].errors}">
+
+                        <div *ngIf="submitted && f['pass'].errors" class="invalid-feedback">
+                            <div *ngIf="f['pass'].errors['required']">
+                                The value for Name is Required
+                            </div>
+                        </div>
+
+                    </div>
+            
+                   <br>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

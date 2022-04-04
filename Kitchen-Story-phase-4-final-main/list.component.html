@@ -1,0 +1,18 @@
+<h1 align="center">List of Products</h1>
+
+<table align="center">
+    <tr align="center">
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>BuyNow</th>
+    </tr>
+    <tr *ngFor="let p of products" align="center">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.description}}</td>
+      <td><button class="btn btn-dark" (click)="OnSubmit()">Buy</button></td>    
+    </tr>
+  </table>

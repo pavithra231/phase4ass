@@ -1,0 +1,21 @@
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  button {
+    font-size: 20px; /* Put your wanted size for your button here*/
+    border-width: 30%;
+    width: 100%;
+   max-width: 290px;
+   box-sizing: border-box;
+  }
+
+ 
